@@ -1,0 +1,19 @@
+{
+  "name": "arrays",
+  "version": "1.0.0",
+  "description": "Here there are some examples about arrays in JS and some theory about them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnriqueRsDev/Arrays.git"
+  },
+  "author": "EnriqueRs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EnriqueRsDev/Arrays/issues"
+  },
+  "homepage": "https://github.com/EnriqueRsDev/Arrays#readme"
+}
