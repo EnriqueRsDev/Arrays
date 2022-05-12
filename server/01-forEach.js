@@ -21,3 +21,17 @@ const app = document.getElementById('app');
 products.forEach(element => {
     app.innerHTML += `<li> ${element.title} - ${element.price}</li>`;
 })
+
+//práctica con for each
+
+const tasks = [
+    {title: 'Task 1', status: false},
+    {title: 'Task 2', status: false},
+    {title: 'Task 3', status: false},
+    {title: 'Task 4', status: false},
+];
+
+const toDo = document.getElementById('todo');
+tasks.forEach(task => {
+    toDo.innerHTML += `<li class="task"> ${task.title} - <input class = 'check' type="checkbox" ${task.status ? 'checked' : ''}></li>`; //Si task.status es verdadero, se marca el checkbox, sino, queda desmarcado
+});
