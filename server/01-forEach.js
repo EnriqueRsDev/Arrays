@@ -17,9 +17,9 @@ const products = [
     {title: 'Pizza', price: 14}
 ];
 
-const app = document.getElementById('app');
+const app = document.getElementById('app'); //Se obtiene el elemento html
 products.forEach(element => {
-    app.innerHTML += `<li> ${element.title} - ${element.price}</li>`;
+    app.innerHTML += `<li> ${element.title} - ${element.price}</li>`; //por cada elemento de products se irá imprimiendo en el html
 })
 
 //práctica con for each
