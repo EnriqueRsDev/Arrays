@@ -11,12 +11,44 @@ const reduceObject = numbers.reduce((obj, number) => {
 
 console.log(reduceObject);
 
-const names = ['Carlos', 'Enrique', 'Carlos', 'Enrique','Carlos','Enrique','Paco'];
+//otros ejemplo usando reduce
+const data = [
+    {
+        name: "Nicolas",
+        level: "low",
+    },
+    {
+        name: "Andrea",
+        level: "medium",
+    },
+    {
+        name: "Zulema",
+        level: "hight",
+    },
+    {
+        name: "Santiago",
+        level: "low",
+    },
+    {
+        name: "Valentina",
+        level: "medium",
+    },
+    {
+        name: "Lucia",
+        level: "hight",
+    },
+];
 
-const nombres = names.reduce((name, namesObj) => {
-    if(name[namesObj.length.toString]) {
-        name[namesObj.length.toString] = name[namesObj.length.toString] + 1;
+const levels = data
+.map(item => item.level)
+.reduce((previous, current) => {
+    if (previous[current]) {
+        previous[current] += 1 
     } else {
-        name[namesObj.length.toString] = 1;
+        previous[current] = 1
     }
-});
+    return previous;
+}, {})
+
+console.log(levels);
+
