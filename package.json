@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/EnriqueRsDev/Arrays/issues"
   },
-  "homepage": "https://github.com/EnriqueRsDev/Arrays#readme"
+  "homepage": "https://github.com/EnriqueRsDev/Arrays#readme",
+  "dependencies": {
+    "date-fns": "^2.28.0"
+  }
 }
