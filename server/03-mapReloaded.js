@@ -62,7 +62,7 @@ function solution(array) {
     return array.map(item => {
         return {
         ...item,
-        taxes: 0.19 * item.price
+        taxes: Math.trunc(0.19 * item.price)
         }
 
     }) 

@@ -66,3 +66,10 @@ function solution(array) {
 
 const arreglo = [2, 4, 5, 6];
 solution(arreglo);
+
+
+function solution(array) {
+	// Tu código aquí 👈
+	return arraySolution = array.map(n => n * 2);
+};
+solution([2, 4, 5, 6]);

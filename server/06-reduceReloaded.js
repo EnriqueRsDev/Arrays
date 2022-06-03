@@ -66,13 +66,17 @@ const addNumber = (num1, num2, num3, num4, num5, num6, num7) => {
 
 addNumber(1,2,3,4,5,6,7);
 
-const listOfNumbers = [1,2,3,4,5,6,7];
+const listOfNumbers = [1,2,3,4,5,6,7,23,12,2,6,1,2,23,5,12];
 
 const rangeOfNumbers = listOfNumbers.reduce((obj, item) => {
     if(item <= 5 && item > 0) {
         obj['1-5']++
-    } else if(item <= 5 && item > 0) {
-
+    } else if(item <= 8 && item > 5) {
+        obj['6-8']++
+    } else if(item <= 10 && item > 8) {
+        obj['9-10']++
+    } else if(item <= 25 && item > 10) {
+        obj['11-25']++
     }
     return obj;
 }, {
