@@ -19,3 +19,25 @@ const numbers = [1,2,3,4,5]; //Arreglo
 const newReduce = (el1, el2) => el1 + el2; //función que se encarga de sumar
 let copy = numbers.reduce(newReduce, 0) //Aplicando reduce
 console.log(copy);
+
+//Desafio
+/**
+ * Tienes un array de números y debes retornar la suma de todos los valores en él.
+
+    La solución debería tener un input y output como los siguientes:
+
+    solution([1, 1, 1]);
+    solution([2, 4, 8]);
+
+    Output
+
+    3
+    14
+ */
+
+    function solution(numbers) {
+        // Tu código aquí 👈 
+        return numbers.reduce((el1, el2) => el1 + el2, 0);
+    }; 
+    solution([1, 1, 1]);
+    solution([2, 4, 8]);
